@@ -10,10 +10,9 @@ const dirPath = args[0] + (args[0].endsWith('/') ? '' : '/');
 const matchRegExp = /^(.+)_\d+(\.\w+?)$/i;
 
 const logLevel = Logger.LogLevel.TRACE;
-
 const logger = new Logger(logLevel);
 
-logger.logInfo('js-renamer', 'Settings:', { dirPath, matchRegExp });
+logger.logInfo('js-renamer', 'Settings:', { dirPath, matchRegExp, logLevel });
 
 async function main()
 {
